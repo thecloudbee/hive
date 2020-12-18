@@ -23,16 +23,19 @@ jobs:
           with:
             auth: ${{ secrets.GIST_TOKEN }}
             gist_url: https://gist.github.com/thecloudbee/b35adb2c30d2f2db9a54520128813be1
+            gist_title: thecloudbee-2021-01-01-first-cft-1-simplest.yaml
             github_file: thecloudbee_blog/code_snippets/2021-01-01/cloudformation/first-cft-1-simplest.yaml
         - uses: popsiclestick/gist-sync-action@v1.2.0
-          id: sync
+          id: sync1
           with:
             auth: ${{ secrets.GIST_TOKEN }}
             gist_url: https://gist.github.com/0641a4b1052cd019f9781c8cbb642fc3
+            gist_title: thecloudbee-2021-01-01-first-cft-2-separate-variables.yaml
             github_file: thecloudbee_blog/code_snippets/2021-01-01/cloudformation/first-cft-2-separate-variables.yaml
         - uses: popsiclestick/gist-sync-action@v1.2.0
-          id: sync
+          id: sync2
           with:
             auth: ${{ secrets.GIST_TOKEN }}
             gist_url: https://gist.github.com/aa1db06e7a835dd4e3dd6f2ba60fa860
+            gist_title: thecloudbee-2021-01-01-first-cft-3-options.yaml
             github_file: thecloudbee_blog/code_snippets/2021-01-01/cloudformation/first-cft-3-options.yaml
