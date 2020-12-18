@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Template to create an EC2'
+
+Mappings:
+  BumbleBeeResources:
+    EC2Configs:
+      ImageId: "ami-09558250a3419e7d0"
+      KeyName: "thecloudbee"
+      InstanceType: "t2.micro"
+
+Resources:
+  BumbleBeeEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !FindInMap [BumbleBeeResources, EC2Configs, ImageId]
+      KeyName: !FindInMap [BumbleBeeResources, EC2Configs, KeyName]
+      InstanceType: !FindInMap [BumbleBeeResources, EC2Configs, InstanceType]

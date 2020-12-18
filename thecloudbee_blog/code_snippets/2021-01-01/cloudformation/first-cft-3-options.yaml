@@ -1,0 +1,26 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Template to create an EC2'
+Mappings:
+  BumbleBeeResources:
+    EC2Configs:
+      ImageId: "ami-09558250a3419e7d0"
+      KeyName: "thecloudbee"
+
+Parameters:
+  InstanceTypeParameter:
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - m1.small
+      - m1.large
+    Description: Enter t2.micro, m1.small, or m1.large. Default is t2.micro.
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !FindInMap [BumbleBeeResources, EC2Configs, ImageId]
+      KeyName: !FindInMap [BumbleBeeResources, EC2Configs, KeyName]
+      InstanceType: !Sub ${InstanceTypeParameter}

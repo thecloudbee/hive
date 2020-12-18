@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Template to create an EC2'
+Resources:
+  BumbleBeeEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: "ami-09558250a3419e7d0"
+      KeyName: "thecloudbee"
+      InstanceType: "t2.micro"
