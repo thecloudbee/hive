@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Mappings:
+  TheCloudBeeEnvMap:
+    lab:
+      amiId: "ami-0a0ad6b70e61be944"
+    staging:
+      amiId: "ami-0bdb828fd58c52235"
+Resources:
+  TheCloudBeeEC2:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: !FindInMap [TheCloudBeeEnvMap, "lab", amiId]
+      InstanceType: "t2.micro"
+      KeyName: "thecloudbee"

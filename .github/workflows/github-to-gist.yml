@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: Update GIST on commit
 
 on:
   push:
@@ -39,3 +37,10 @@ jobs:
             gist_url: https://gist.github.com/aa1db06e7a835dd4e3dd6f2ba60fa860
             gist_title: thecloudbee-2021-01-01-first-cft-3-options.yaml
             github_file: thecloudbee_blog/code_snippets/2021-01-01/cloudformation/first-cft-3-options.yaml
+        - uses: popsiclestick/gist-sync-action@v1.2.0
+          id: sync3
+          with:
+            auth: ${{ secrets.GIST_TOKEN }}
+            gist_url: https://gist.github.com/thecloudbee/abbdfdb5e421cd6361d68e8663691276
+            gist_title: thecloudbee-2021-01-07-environment-example-with-instance-type.yaml
+            github_file: thecloudbee_blog/code_snippets/2021-01-07/cloudformation/environment-example-with-instance-type.yaml
