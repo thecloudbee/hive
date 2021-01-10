@@ -42,12 +42,12 @@ jobs:
         with:
           auth: ${{ secrets.GIST_TOKEN }}
           gist_url: https://gist.github.com/thecloudbee/abbdfdb5e421cd6361d68e8663691276
-          gist_title: thecloudbee-2021-01-07-environment-example-with-instance-type.yaml
-          github_file: thecloudbee_blog/code_snippets/2021-01-07/cloudformation/environment-example-with-instance-type.yaml
+          gist_title: thecloudbee-2021-01-11-environment-example-with-instance-type.yaml
+          github_file: thecloudbee_blog/code_snippets/2021-01-11/cloudformation/environment-example-with-instance-type.yaml
       - uses: popsiclestick/gist-sync-action@v1.2.0
           id: sync4
           with:
             auth: ${{ secrets.GIST_TOKEN }}
             gist_url: https://gist.github.com/59c7d12ab56bb2f1af95723a31d195a2
-            gist_title: thecloudbee-2021-01-07-run-terraform-with-var-file.sh
-            github_file: thecloudbee_blog/code_snippets/2021-01-07/terraform/modules/run.sh
+            gist_title: thecloudbee-2021-01-11-run-terraform-with-var-file.sh
+            github_file: thecloudbee_blog/code_snippets/2021-01-11/terraform/modules/run.sh
