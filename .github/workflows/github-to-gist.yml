@@ -48,6 +48,6 @@ jobs:
           id: sync4
           with:
             auth: ${{ secrets.GIST_TOKEN }}
-            gist_url: https://gist.github.com/59c7d12ab56bb2f1af95723a31d195a2
+            gist_url: https://gist.github.com/thecloudbee/59c7d12ab56bb2f1af95723a31d195a2
             gist_title: thecloudbee-2021-01-11-run-terraform-with-var-file.sh
             github_file: thecloudbee_blog/code_snippets/2021-01-11/terraform/modules/run.sh
