@@ -20,30 +20,16 @@ jobs:
         id: sync5
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/afc99e3dd8dd9fde80d0b7334dd6d40c
-          gist_title: thecloudbee-2021-01-18-sample-java-exception.log
-          github_file: thecloudbee_blog/code_snippets/2021-01-18/elasticsearch/java-exception.log
-      - uses: popsiclestick/gist-sync-action@v1.2.0
-        id: sync6
-        with:
-          auth: ${{ secrets.GIST_TOKEN }}
           gist_url: https://gist.github.com/aeb2439bf825d22b2a7637723d051464
           gist_title: thecloudbee-2021-01-18-custom-analyzer-query.sh
           github_file: thecloudbee_blog/code_snippets/2021-01-18/elasticsearch/custom-analyzer-query.sh
       - uses: popsiclestick/gist-sync-action@v1.2.0
-        id: sync7
+        id: sync6
         with:
           auth: ${{ secrets.GIST_TOKEN }}
           gist_url: https://gist.github.com/44e5ad52c586f5f2abbb66c95b94aa2c
           gist_title: thecloudbee-2021-01-18-elasticsearch-index-query.sh
           github_file: thecloudbee_blog/code_snippets/2021-01-18/elasticsearch/elasticsearch-index-query.sh
-      - uses: popsiclestick/gist-sync-action@v1.2.0
-        id: sync8
-        with:
-          auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/e7918c721385dbe650fed1ca02deaf25
-          gist_title: thecloudbee-2021-01-18-custom-analyzed-keyowrds.txt
-          github_file: thecloudbee_blog/code_snippets/2021-01-18/elasticsearch/keywords.txt
       - uses: popsiclestick/gist-sync-action@v1.2.0
         id: sync4
         with:
