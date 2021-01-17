@@ -6,7 +6,7 @@ PUT tcb-2021-01-18-special-chars
         "tcb_special_char_analyser": {
           "type": "custom",
           "tokenizer": "tcb_special_char_tokenizer",
-					"filter": [
+          "filter": [
             "lowercase",
             "stop"
           ]
