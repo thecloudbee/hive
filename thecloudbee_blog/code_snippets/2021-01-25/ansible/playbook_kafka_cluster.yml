@@ -1,0 +1,13 @@
+---
+
+- hosts: staging
+  become: yes
+  roles:
+    - java
+    - zookeeper
+
+- hosts: staging
+  become: yes
+  roles:
+    - java
+    - kafka

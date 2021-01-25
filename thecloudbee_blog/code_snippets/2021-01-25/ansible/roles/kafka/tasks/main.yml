@@ -1,0 +1,4 @@
+- name: Print Kafka
+  ansible.builtin.debug:
+    msg:
+      - "Kafka role was invoked."

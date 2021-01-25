@@ -17,23 +17,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - uses: popsiclestick/gist-sync-action@v1.2.0
-        id: sync5
+        id: sync8
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/aeb2439bf825d22b2a7637723d051464
-          gist_title: thecloudbee-2021-01-18-custom-analyzer-query.sh
-          github_file: thecloudbee_blog/code_snippets/2021-01-18/elasticsearch/custom-analyzer-query.sh
+          gist_url: https://gist.github.com/thecloudbee/cc68fde22e1855cb7a8eddce0b6e93bb
+          gist_title: 2021-01-25-playbook-kafka-cluster.yml
+          github_file: thecloudbee_blog/code_snippets/2021-01-25/ansible/playbook_kafka_cluster.yml
       - uses: popsiclestick/gist-sync-action@v1.2.0
-        id: sync6
+        id: sync9
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/44e5ad52c586f5f2abbb66c95b94aa2c
-          gist_title: thecloudbee-2021-01-18-elasticsearch-index-query.sh
-          github_file: thecloudbee_blog/code_snippets/2021-01-18/elasticsearch/elasticsearch-index-query.sh
+          gist_url: https://gist.github.com/thecloudbee/6ec2e67d28e4f246d6ac47004762a2a5
+          gist_title: 2021-01-25-ansible-execute.sh
+          github_file: thecloudbee_blog/code_snippets/2021-01-25/ansible/execute.sh
       - uses: popsiclestick/gist-sync-action@v1.2.0
-        id: sync4
+        id: sync10
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/thecloudbee/59c7d12ab56bb2f1af95723a31d195a2
-          gist_title: thecloudbee-2021-01-11-run-terraform-with-var-file.sh
-          github_file: thecloudbee_blog/code_snippets/2021-01-11/terraform/run.sh
+          gist_url: https://gist.github.com/thecloudbee/0e53b158bab8aeb70c932e6b8e9e7f2b
+          gist_title: 2021-01-25-ansible-hosts.yml
+          github_file: thecloudbee_blog/code_snippets/2021-01-25/ansible/hosts/hosts.yml

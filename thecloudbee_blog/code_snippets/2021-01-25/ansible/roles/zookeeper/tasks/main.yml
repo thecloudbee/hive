@@ -1,0 +1,4 @@
+- name: Print Zookeeper
+  ansible.builtin.debug:
+    msg:
+      - "Zookeeper role was invoked."

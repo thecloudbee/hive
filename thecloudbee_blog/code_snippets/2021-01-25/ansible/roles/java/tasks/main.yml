@@ -1,0 +1,4 @@
+- name: Print Java
+  ansible.builtin.debug:
+    msg:
+      - "Java role was invoked."
