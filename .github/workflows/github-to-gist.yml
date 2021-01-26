@@ -36,4 +36,4 @@ jobs:
           auth: ${{ secrets.GIST_TOKEN }}
           gist_url: https://gist.github.com/thecloudbee/0e53b158bab8aeb70c932e6b8e9e7f2b
           gist_title: 2021-01-25-ansible-hosts.yml
-          github_file: thecloudbee_blog/code_snippets/2021-01-25/ansible/hosts/hosts.yml
+          github_file: thecloudbee_blog/code_snippets/2021-01-25/ansible/hosts/hosts
