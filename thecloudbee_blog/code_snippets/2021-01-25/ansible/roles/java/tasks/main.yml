@@ -1,3 +1,4 @@
+---
 - name: Print Java
   ansible.builtin.debug:
     msg:

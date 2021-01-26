@@ -1,3 +1,4 @@
+---
 - name: Print Kafka
   ansible.builtin.debug:
     msg:

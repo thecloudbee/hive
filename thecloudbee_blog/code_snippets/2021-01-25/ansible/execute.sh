@@ -1,3 +1,4 @@
 ansible-playbook \
-    --inventory-file hosts/hosts.yaml \
-    --limit staging
+    --inventory hosts/hosts \
+    --limit 'staging' \
+    playbook_kafka_cluster.yml
