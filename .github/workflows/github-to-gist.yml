@@ -17,19 +17,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - uses: popsiclestick/gist-sync-action@v1.2.0
-        id: sync8
+        id: sync1
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/thecloudbee/cc68fde22e1855cb7a8eddce0b6e93bb
-          gist_title: 2021-01-25-playbook-kafka-cluster.yml
-          github_file: thecloudbee_blog/code_snippets/2021-01-25/ansible/playbook_kafka_cluster.yml
+          gist_url: https://gist.github.com/thecloudbee/d41e716bf94202683bfef4cd29d1da91
+          gist_title: 2021-02-08-es-rollover-index.sh
+          github_file: thecloudbee_blog/code_snippets/2021-02-08/elasticsearch/rollover-index.sh
       - uses: popsiclestick/gist-sync-action@v1.2.0
-        id: sync9
+        id: sync2
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/thecloudbee/6ec2e67d28e4f246d6ac47004762a2a5
-          gist_title: 2021-01-25-ansible-execute.sh
-          github_file: thecloudbee_blog/code_snippets/2021-01-25/ansible/execute.sh
+          gist_url: https://gist.github.com/thecloudbee/1f1c352aa23fd939bf2afa9d8b33e1bd
+          gist_title: 2021-02-08-es-shrink-index.sh
+          github_file: thecloudbee_blog/code_snippets/2021-02-08/elasticsearch/shrink-index.sh
       - uses: popsiclestick/gist-sync-action@v1.2.0
         id: sync10
         with:
