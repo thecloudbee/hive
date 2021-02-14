@@ -1,0 +1,1 @@
+SELECT * FROM thecloudbee.dhcp_logs where date='2021-01-10' and mac='00:26:9e:83:a2:30' LIMIT 10;

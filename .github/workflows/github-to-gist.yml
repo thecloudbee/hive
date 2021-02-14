@@ -20,20 +20,34 @@ jobs:
         id: sync1
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/thecloudbee/d41e716bf94202683bfef4cd29d1da91
-          gist_title: 2021-02-08-es-rollover-index.sh
-          github_file: thecloudbee_blog/code_snippets/2021-02-08/elasticsearch/rollover-index.sh
+          gist_url: https://gist.github.com/thecloudbee/d98a0883167e923c892db9d12d855764
+          gist_title: 2021-02-15-s3-structure.sh
+          github_file: thecloudbee_blog/code_snippets/2021-02-15/athena/s3_structure.sh
       - uses: popsiclestick/gist-sync-action@v1.2.0
         id: sync2
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/thecloudbee/1f1c352aa23fd939bf2afa9d8b33e1bd
-          gist_title: 2021-02-08-es-shrink-index.sh
-          github_file: thecloudbee_blog/code_snippets/2021-02-08/elasticsearch/shrink-index.sh
+          gist_url: https://gist.github.com/thecloudbee/00edec18d88d9e87c6f92cb52e62c34e
+          gist_title: 2021-02-15-sample-dhcp.log
+          github_file: thecloudbee_blog/code_snippets/2021-02-15/athena/dhcp.log
       - uses: popsiclestick/gist-sync-action@v1.2.0
         id: sync10
         with:
           auth: ${{ secrets.GIST_TOKEN }}
-          gist_url: https://gist.github.com/thecloudbee/0e53b158bab8aeb70c932e6b8e9e7f2b
-          gist_title: 2021-01-25-ansible-hosts.yml
-          github_file: thecloudbee_blog/code_snippets/2021-01-25/ansible/hosts/hosts
+          gist_url: https://gist.github.com/thecloudbee/a0337c1a3c2c08ad0ccb29198ca1fabe
+          gist_title: 2021-02-15-create-table-athena.sql
+          github_file: thecloudbee_blog/code_snippets/2021-02-15/athena/create_table.sql
+      - uses: popsiclestick/gist-sync-action@v1.2.0
+        id: sync10
+        with:
+          auth: ${{ secrets.GIST_TOKEN }}
+          gist_url: https://gist.github.com/thecloudbee/af6486d4fd161124d558b39c33bd62fc
+          gist_title: 2021-02-15-create-partitions-athena.sql
+          github_file: thecloudbee_blog/code_snippets/2021-02-15/athena/create_partition.sql
+      - uses: popsiclestick/gist-sync-action@v1.2.0
+        id: sync10
+        with:
+          auth: ${{ secrets.GIST_TOKEN }}
+          gist_url: https://gist.github.com/thecloudbee/f45a109f69022afed0b1d2252701db0a
+          gist_title: 2021-02-15-select-query-athena.sql
+          github_file: thecloudbee_blog/code_snippets/2021-02-15/athena/select_query.sql
